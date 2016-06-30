@@ -1,9 +1,9 @@
 <?php 
 
-$a = 100;
+$a = 2;
 
 do {
 	echo "\$a is equal to {$a}\n";
-	$a -= 5;
+	$a *= $a;
 
-} while ($a >= 0);
+} while ($a < 1000000);
