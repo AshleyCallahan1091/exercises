@@ -3,7 +3,7 @@
 $randomNumber = mt_rand(1, 42);
 $guessCount = 1;
 
-echo "I'm thinking of a number between 1-41. \n";
+fwrite(STDOUT, "I'm thinking of a number between 1-41. \n");
 fwrite(STDOUT, number . PHP_EOL);
 
 do {
@@ -22,4 +22,4 @@ do {
 		echo "Guesses made: " . $guessCount . "\n";
 		echo "To leave this exciting game, press Ctl + C \n";
 	}
-}
+};
