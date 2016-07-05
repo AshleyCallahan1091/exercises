@@ -17,9 +17,9 @@ do {
 	} elseif ($userGuess > $randomNumber) {
 		echo "Too high! \n";
 		$guessCount++;
-	} elseif ($userGuess == $randomNumber) {
+	} while  ($userGuess !== $randomNumber) {
 		echo "Go team! \n";
 		echo "Guesses made: " . $guessCount . "\n";
 		echo "To leave this exciting game, press Ctl + C \n";
 	}
-};
+}
