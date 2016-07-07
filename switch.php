@@ -23,7 +23,6 @@
 
      case 3:
         
-
      echo "Wednesday\n";
      break;
 
