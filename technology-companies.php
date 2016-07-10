@@ -48,10 +48,10 @@ $companies = [
 //var_dump($companies);
 
 
-ksort($companies);
+// ksort($companies);
 foreach ($companies as $company => $name) {
-    echo count($name) . PHP_EOL;
-    sort($name);
+    
+    arsort($companies);
     $companies[$company] = $name;
 }
     
