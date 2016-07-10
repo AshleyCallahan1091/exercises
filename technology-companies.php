@@ -45,4 +45,17 @@ $companies = [
     ]
 ];
 
+//var_dump($companies);
+
+
+ksort($companies);
+foreach ($companies as $company => $name) {
+    echo count($name) . PHP_EOL;
+    sort($name);
+    $companies[$company] = $name;
+}
+    
+
+
 print_r($companies);
+
