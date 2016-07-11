@@ -23,3 +23,5 @@ function searchNames ($names, $compare) {
 
 }
 return searchNames($names, $compare);
+
+
