@@ -1,37 +1,31 @@
 <?php
 
-$names = ['Tina', 'Dana', 'Mike', 'Amy', 'Adam'];
+	$names = ['Tina', 'Dana', 'Mike', 'Amy', 'Adam'];
 
-$compare = ['Tina', 'Dean', 'Mel', 'Amy', 'Michael'];
+	$compare = ['Tina', 'Dean', 'Mel', 'Amy', 'Michael'];
 
+	// function combine_arrays ($names, $compare) {
+	// 	foreach ($compare as $name) {
+	//     	$result = array_search($names, $compare);
+	//     	array_push($names, $result);
+	// 	}
+	// 	return print_r($names);
 
+	// }
+	// return combine_arrays($names, $compare);
 
-// function combine_arrays ($names, $compare) {
-// 	foreach ($compare as $name) {
-//     	$result = array_search($names, $compare);
-//     	array_push($names, $result);
-// 	}
-// 	return print_r($names);
+	$array3 = [];
 
-// }
-// return combine_arrays($names, $compare);
+	 foreach ($compare as $name) {
+		if (array_search($name, $names) === FALSE) {
+		   array_push($names, $name);
+		   
+		} else {
+			 $array3[] = $name;
+		}
+	}
 
-
-$array3 = [];
-
-
- foreach ($compare as $name) {
-    if (array_search($name, $names) === FALSE) {
-       array_push($names, $name);
-       
-    } else {
-    	 $array3[] = $name;
-    }
-}
-
-
-
-print_r($names);
+	print_r($names);
 
 
 
