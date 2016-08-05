@@ -1,4 +1,5 @@
-<?php class Log {
+<?php 
+class Log {
 
 	public $filename;
 	public $handle;
